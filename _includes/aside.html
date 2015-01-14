@@ -1,0 +1,22 @@
+<aside data-equalizer-watch>
+  <ul class="side-nav">
+    <li class="heading">Getting started</li>
+  	{% if page.side_menu_docs %}
+  		{% for menu in page.side_menu_docs %}
+    		<li {% if menu['active'] %} class="active" {% endif %}>
+    			<a href="{{ site.baseurl }}/{{ menu['url'] }}" class="aside-link">{{ menu['title'] }}</a>
+    		</li>
+  		{% endfor %}
+  	{% endif %}
+    <li class="heading">Tutorials</li>
+    {% if page.side_menu_tutorials %}
+      {% for menu in page.side_menu_tutorials %}
+        <li {% if menu['active'] %} class="active" {% endif %}>
+          <a href="{{ site.baseurl }}/{{ menu['url'] }}" class="aside-link">{{ menu['title'] }}</a>
+        </li>
+      {% endfor %}
+    {% endif %}
+    <li class="heading">Demo</li>
+    <li><a href="https://demo.curriculr.org" target="_new"><i class="fa fa-at"></i> Heroku</a></li>
+  </ul>
+</aside>

@@ -1,0 +1,10 @@
+markdown: kramdown
+highlighter: pygments
+
+#baseurl: /curriculr
+
+# collections:
+#   docs:
+#     output: true
+#   tutorials:
+#     output: true
