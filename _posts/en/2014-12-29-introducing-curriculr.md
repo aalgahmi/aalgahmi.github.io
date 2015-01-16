@@ -1,5 +1,6 @@
 ---
 layout: blog
+category: en
 ---
 
 Curriculr is an open and interactive learning platform that supports both MOOCs (Massive Online Open Courses) and courses with limited-audiences. Whether your course is public or private, for arts or mathematics, literature or technology, instruction or training, Curriculr provides a simple and powerful platform for all.

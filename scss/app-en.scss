@@ -1,4 +1,7 @@
+@import url(//fonts.googleapis.com/css?family=Open+Sans:300);
+@import url(//fonts.googleapis.com/earlyaccess/droidarabickufi.css);
 @import "settings";
+$text-direction: ltr;
 @import "foundation";
 
 // Or selectively include components
@@ -39,75 +42,4 @@
 //   "foundation/components/offcanvas",
 //   "foundation/components/visibility";
 @import "syntax-highlighting";
-
-.jumbotron {
-	color: $white;
-	background: $charcoal;
-	padding: 15px 0 0; 
-	box-shadow: 0 1px 6px rgba(34, 25, 25, 0.6); 
-	z-index: 999;
-  background-size: cover;
-  padding: 60px 0;
-
-  h1, h2, h3 {
-  	color: $smoke;
-  }
-
-  &.secondary{
-    padding: 50px 0;
-  }
-}
-
-.centered-list {
-	display: table;
-  margin: 0 auto;
-}
-
-h1, h2, h3 {
-	color: #7a687b;
-}
-
-aside {
-  .side-nav {
-    padding: 0px;
-  }
-}
-
-.strip-gray {
-  border-top: solid 1px $gainsboro;
-  background: $silver;
-  padding: 40px 0px;
-
-  h1 {
-    padding-bottom: 40px;
-  }
-}
-
-.strip-even {
-  border-top: solid 1px $smoke;
-  border-bottom: solid 1px $smoke;
-}
-
-.lead {
-  font-size: 21px;
-  padding: 20px 0px;
-}
-
-.strip-even img, .strip-odd img {
-  margin: 20px 0px;
-  background: $white;
-  padding: 10px;
-  border: 1px solid $smoke;
-  border-radius: 5px;
-}
-
-footer {
-  border-top: 1px solid $base;
-  padding-top: 10px;
-  color: $white;
-  background: $oil;
-
-  a, a:active, a:hover {
-    color: $smoke;
-  }
-}
+@import "common";

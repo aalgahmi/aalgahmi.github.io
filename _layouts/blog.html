@@ -4,11 +4,14 @@ layout: default
 
 <div class="jumbotron secondary">
   <div class="row">
-    <div class="large-12 hide-for-small">
+    <div class="large-12 columns hide-for-small">
       <div id="featured" style="text-align: center;">
-        <h1><i class="fa fa-newspaper-o"></i></h1>
         <h2>
-          aalgahmi.github.io
+          {% if page.locale == 'en' %}
+            Random thoughts
+          {% else %}
+            أما بعد
+          {% endif %}
         </h2>
       </div>
     </div>
@@ -17,9 +20,48 @@ layout: default
 <br/><br/>
 
 <div class="row">
-  <div class="large-2 columns" role="aside">&nbsp;</div>
-  <div class="large-8 columns" role="content">
+  <div class="large-3 columns" role="aside">
+    <img src="{{ site.baseurl }}/images/pic.jpg" class="centered photo"/>
+    {% if page.locale == 'en' %}
+      <span class="centered"><strong>Abdulmalik Al-Gahmi</strong></span>
+      <br/>
+      <blockquote>
+        Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Curabitur blandit tempus porttitor. Donec id elit non mi porta gravida at eget metus. 
+      </blockquote>
+    {% else %}
+      <span class="centered"><strong>عبد الملك الجهمي</strong></span>
+      <br/>
+      <blockquote>
+        السماء ملبدة بالغيوم <br/>
+        والأرض فاتحة ثغرها <br/>
+        في انتظار الذي لا يجي <br/>
+        و لو بعد عمر من الانتظار <br/>
+        و أنا <br/>
+        ههنا <br/>
+        و في كل آن <br/>
+        أخاف على بلدي
+      </blockquote>
+    {% endif %}
+    <br/>
+    <ul style="list-style: none;">
+    <li><a href="http://twitter.com/aalgahmi" target="_blank">
+      <i class="fa fa-fw fa-twitter-square"></i> Twitter
+    </a></li>
+    <li><a href="http://facebook.com/aalgahmi" target="_blank">
+      <i class="fa fa-fw fa-facebook-square"></i> Facebook
+    </a></li>
+    <li><a href="http://plus.google.com/+aalgahmi" target="_blank">
+      <i class="fa fa-fw fa-google-plus-square"></i> Google+
+    </a></li>
+    <li><a href="http://instagram.com/mmistakes"target="_blank">
+      <i class="fa fa-fw fa-instagram"></i> Instagram
+    </a></li>
+    <li><a href="http://github.com/mmistakes" target="_blank">
+      <i class="fa fa-fw fa-github"></i> Github
+    </a></li>
+    </ul>
+  </div>
+  <div class="large-9 columns" role="content">
     {{ content }}
   </div>
-  <div class="large-2 columns" role="aside">&nbsp;</div>
 </div>
