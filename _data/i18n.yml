@@ -1,0 +1,41 @@
+en:
+  blog_title: Random thoughts
+  blog_quote: Curabitur blandit tempus porttitor. Donec id elit non mi porta gravida at eget metus.
+  author:
+    name: Abdulmalik Al-Gahmi
+  copyrights: © 2015 all rights reserved
+  language: English
+  dir: ltr
+  left: left
+  right: right
+  read_more: Read more
+  menu:
+    about: About
+    all_posts: All posts
+    recent_posts: Recent posts
+    other_language: العربية
+    other_locale: ar
+ar:
+  blog_title: أما بعد
+  blog_quote: 
+    السماء ملبدة بالغيوم <br/>
+    والأرض فاتحة ثغرها <br/>
+    في انتظار الذي لا يجي <br/>
+    و لو بعد عمر من الانتظار <br/>
+    و أنا <br/>
+    و في كل آن <br/>
+    أخاف على بلدي
+  author:
+    name: عبد الملك الجهمي
+  copyrights: © جميع الحقوق محفوظة 2015
+  language: العربية
+  dir: rtl
+  left: right
+  right: left
+  read_more: أقرأ المزيد
+  menu:
+    about: عني
+    all_posts: كل المقالات
+    recent_posts: أحدث المقالات
+    other_language: English
+    other_locale: en

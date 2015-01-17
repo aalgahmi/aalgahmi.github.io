@@ -1,13 +1,7 @@
 <footer>
   <div class="row">
     <div class="large-12 columns">
-      <p>
-        {% if page.locale == 'en' %}
-          © 2015 all rights reserved
-        {% else %}
-          © جميع الحقوق محفوظة 2015 
-        {% endif %}
-  		</p>
+      <p>{{ site.data.i18n[page.locale].copyrights }}</p>
     </div>
   </div>
 </footer>

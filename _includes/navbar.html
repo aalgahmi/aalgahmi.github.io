@@ -13,15 +13,19 @@
     </ul>
 
     <section class="top-bar-section">
-      {% if page.locale == 'en' %}
-        <ul class="right">
-          <li><a href="{{ site.baseurl }}/ar.html">العربية</a></li>
-        </ul>
-      {% else %}
-        <ul class="left">
-          <li><a href="{{ site.baseurl }}/">English</a></li>
-        </ul>
-      {% endif %}
+      <ul class="{{ site.data.i18n[page.locale].left }}">
+        <li><a href="#">{{ site.data.i18n[page.locale].menu.about }}</a></li>
+        <li><a href="#">{{ site.data.i18n[page.locale].menu.recent_posts }}</a></li>
+        <li><a href="#">{{ site.data.i18n[page.locale].menu.all_posts }}</a></li>
+      </ul>
+
+      <ul class="{{ site.data.i18n[page.locale].right }}">
+        <li>
+          <a href="{{ site.baseurl }}/{{ site.data.i18n[page.locale].menu.other_locale }}/">
+            {{ site.data.i18n[page.locale].menu.other_language }}
+          </a>
+        </li>
+      </ul>
     </section>
   </nav>
 </div>

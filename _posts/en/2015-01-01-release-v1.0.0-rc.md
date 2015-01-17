@@ -1,5 +1,6 @@
 ---
-layout: blog
+layout: post
+locale: en
 category: en
 ---
 

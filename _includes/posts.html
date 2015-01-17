@@ -1,0 +1,7 @@
+{% for post in posts %}
+  <h3>{{ post.title }}</h3>
+  <i>{{ post.date | date: "%b %-d, %Y" }}</i>
+
+  {{ post.excerpt }}
+  <a href="{{ post.url }}" class="button radius small primary">{{ site.data.i18n[page.locale].read_more }}</a>
+{% endfor %}
