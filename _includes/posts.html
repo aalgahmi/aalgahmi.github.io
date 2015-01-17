@@ -1,7 +1,13 @@
-{% for post in posts %}
+{% for post in posts limit:5 %}
   <h3>{{ post.title }}</h3>
   <i>{{ post.date | date: "%b %-d, %Y" }}</i>
 
   {{ post.excerpt }}
-  <a href="{{ post.url }}" class="button radius small primary">{{ site.data.i18n[page.locale].read_more }}</a>
+  <a href="{{ post.url }}" class="button radius tiny primary">{{ site.data.i18n[page.locale].read_more }}</a>
 {% endfor %}
+
+{% if posts.size > 5 %}
+  <a href="{{ site.baseurl }}/{{ page.locale }}/all.html" class="button radius large centered secondary">
+    {{ site.data.i18n[page.locale].menu.all_posts }}
+  </a>
+{% endif %}

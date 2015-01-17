@@ -14,9 +14,21 @@
 
     <section class="top-bar-section">
       <ul class="{{ site.data.i18n[page.locale].left }}">
-        <li><a href="#">{{ site.data.i18n[page.locale].menu.about }}</a></li>
-        <li><a href="#">{{ site.data.i18n[page.locale].menu.recent_posts }}</a></li>
-        <li><a href="#">{{ site.data.i18n[page.locale].menu.all_posts }}</a></li>
+        <!--<li>
+          <a href="{{ site.baseurl }}/about.html">
+            {{ site.data.i18n[page.locale].menu.about }}
+          </a>
+        </li> -->
+        <li>
+          <a href="{{ site.baseurl }}/{{ page.locale }}/">
+            {{ site.data.i18n[page.locale].menu.recent_posts }}
+          </a>
+        </li>
+        <li>
+          <a href="{{ site.baseurl }}/{{ page.locale }}/all.html">
+            {{ site.data.i18n[page.locale].menu.all_posts }}
+          </a>
+        </li>
       </ul>
 
       <ul class="{{ site.data.i18n[page.locale].right }}">

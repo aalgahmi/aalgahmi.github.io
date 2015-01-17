@@ -19,3 +19,5 @@ It was designed to be:
 - **Extensible**: It was designed to be extensible by means of other gems, plugins or mountable engines; just like any other Rails application.
 
 More information can be found at [this page]({{ site.baseurl }}/docs/index.html).
+
+<!--iframe width="560" height="315" src="http://www.youtube.com/embed/PWf4WUoMXwg" frameborder="0"> </iframe-->

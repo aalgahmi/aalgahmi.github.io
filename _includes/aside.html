@@ -1,22 +1,30 @@
-<aside data-equalizer-watch>
-  <ul class="side-nav">
-    <li class="heading">Getting started</li>
-  	{% if page.side_menu_docs %}
-  		{% for menu in page.side_menu_docs %}
-    		<li {% if menu['active'] %} class="active" {% endif %}>
-    			<a href="{{ site.baseurl }}/{{ menu['url'] }}" class="aside-link">{{ menu['title'] }}</a>
-    		</li>
-  		{% endfor %}
-  	{% endif %}
-    <li class="heading">Tutorials</li>
-    {% if page.side_menu_tutorials %}
-      {% for menu in page.side_menu_tutorials %}
-        <li {% if menu['active'] %} class="active" {% endif %}>
-          <a href="{{ site.baseurl }}/{{ menu['url'] }}" class="aside-link">{{ menu['title'] }}</a>
-        </li>
-      {% endfor %}
-    {% endif %}
-    <li class="heading">Demo</li>
-    <li><a href="https://demo.curriculr.org" target="_new"><i class="fa fa-at"></i> Heroku</a></li>
-  </ul>
-</aside>
+<img src="{{ site.baseurl }}/images/pic.jpg" class="centered photo"/>
+<span class="centered"><strong>{{ site.data.i18n[page.locale].author.name }}</strong></span>
+<br/>
+<blockquote>{{ site.data.i18n[page.locale].blog_quote }}</blockquote>
+
+<br/>
+<ul class="unstyled">
+  <li>
+    <a href="http://twitter.com/aalgahmi" target="_blank">
+      <i class="fa fa-fw fa-twitter-square"></i> Twitter
+    </a>
+  </li>
+  <li>
+    <a href="#" target="_blank">
+      <i class="fa fa-fw fa-facebook-square"></i> Facebook
+    </a>
+  </li>
+  <li>
+    <a href="http://github.com/aalgahmi" target="_blank">
+      <i class="fa fa-fw fa-github"></i> Github
+    </a>
+  </li>
+</ul>
+
+{% if page.id %}
+  <hr/>
+  {% assign current_post = page %}
+  {% assign posts = site.categories[page.locale] %}
+  {% include post_links.html %}
+{% endif %}

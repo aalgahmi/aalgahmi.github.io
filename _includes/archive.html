@@ -1,0 +1,37 @@
+<h3>{{ site.data.i18n[page.locale].menu.all_posts }}</h3>
+
+{% for post in posts %}
+  {% capture year %}{{ post.date | date: '%Y' }}{% endcapture %}
+  {% capture nyear %}{{ post.next.date | date: '%Y' }}{% endcapture %}
+
+  {% if year != nyear or post == posts.first %}
+    {% if post != posts.first %}
+      </ul>
+    {% endif %}
+      <h4>{{ post.date | date: '%Y' }}</h4>
+      <ul>
+  {% endif %}
+
+  <li>
+    <h6>
+      <a href="{{ post.url }}">{{ post.title }}</a>
+      <small>{{ post.date | date: '%Y-%m-%d' }}</small>
+    </h6>
+  </li>
+{% endfor %}
+
+{% if posts.size > 0 %}
+  </ul>
+{% endif %}
+
+<hr>
+
+<ul class="posts">  
+  {% for post in site.posts limit:20 %}  
+     <li>  
+       <span>{{ post.date | date_to_string }}</span> &raquo;  
+       <a href="{{ BASE_PATH }}{{ post.url }}">  
+       {{ post.title }}</a>  
+     </li>  
+  {% endfor %}  
+</ul>

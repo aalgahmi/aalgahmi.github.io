@@ -8,9 +8,15 @@
 
   <div class="jumbotron secondary">
     <div class="row">
-      <div class="large-12 columns hide-for-small">
+      <div class="large-1 columns hide-for-small">&nbsp;</div>
+      <div class="large-3 columns hide-for-small">
         <div id="featured" style="text-align: center;">
-          <h2>{{ site.data.i18n[page.locale].blog_title }}</h2>
+          <h3>{{ site.data.i18n[page.locale].blog_title }}</h3>
+        </div>
+      </div>
+      <div class="large-8 columns hide-for-small">
+        <div id="featured">
+          &nbsp;
         </div>
       </div>
     </div>
@@ -18,37 +24,20 @@
   <br/><br/>
 
   <div class="row">
-    <div class="large-3 columns" role="aside">
-      <img src="{{ site.baseurl }}/images/pic.jpg" class="centered photo"/>
-      <span class="centered"><strong>{{ site.data.i18n[page.locale].author.name }}</strong></span>
-      <br/>
-      <blockquote>{{ site.data.i18n[page.locale].blog_quote }}</blockquote>
-
-      <br/>
-      <ul style="list-style: none;">
-      <li><a href="http://twitter.com/aalgahmi" target="_blank">
-        <i class="fa fa-fw fa-twitter-square"></i> Twitter
-      </a></li>
-      <li><a href="http://facebook.com/aalgahmi" target="_blank">
-        <i class="fa fa-fw fa-facebook-square"></i> Facebook
-      </a></li>
-      <li><a href="http://plus.google.com/+aalgahmi" target="_blank">
-        <i class="fa fa-fw fa-google-plus-square"></i> Google+
-      </a></li>
-      <li><a href="http://instagram.com/mmistakes"target="_blank">
-        <i class="fa fa-fw fa-instagram"></i> Instagram
-      </a></li>
-      <li><a href="http://github.com/mmistakes" target="_blank">
-        <i class="fa fa-fw fa-github"></i> Github
-      </a></li>
-      </ul>
+    <div class="large-1 columns hide-for-small" role="aside">
+      &nbsp;
     </div>
-    <div class="large-9 columns" role="content">
+    <div class="large-3 columns" role="aside">
+      {% include aside.html %}
+    </div>
+    <div class="large-7 columns" role="content">
       {{ content }}
+    </div>
+    <div class="large-1 columns hide-for-small" role="aside">
+      &nbsp;
     </div>
   </div>
 
- 
   {% include footer.html %}
 
   <script src="{{ site.baseurl }}/bower_components/jquery/dist/jquery.min.js"></script>

@@ -52,7 +52,7 @@
 // - - - - - - - - - - - - - - - - - - - - - - - - -
 
 // This is the default html and body font-size for the base rem value.
-$base-font-size: 15px;
+$base-font-size: 16px;
 $rem-base: $base-font-size;
 
 // Allows the use of rem-calc() or lower-bound() in your settings
@@ -118,7 +118,7 @@ $oil         : #333333;
 $violet      : #5D2788;
 
 // We use these as default colors throughout
-$primary-color: #5D2788; //#008CBA;
+$primary-color: #0C7298; //#008CBA; #0C7298
 // $secondary-color: #e7e7e7;
 $alert-color: #f2dede;//#f04124;
 $success-color: #dff0d8;//#43AC6A;
@@ -128,7 +128,7 @@ $info-color: #d9edf7;//#a0d3e8;
 // We use these to control various global styles
 // $body-bg: $white;
 // $body-font-color: $jet;
-$body-font-family: 'Open Sans', 'Droid Arabic Kufi', Arial, sans-serif; //'lucida grande',tahoma,verdana,arial,sans-serif; //$font-family-sans-serif;
+// $body-font-family: $font-family-sans-serif;
 // $body-font-weight: $font-weight-normal;
 // $body-font-style: normal;
 

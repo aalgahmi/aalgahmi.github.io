@@ -1,0 +1,33 @@
+<ul class="side-nav">
+<li class="heading">{{ site.data.i18n[current_post.locale].more }}</li>
+{% for post in posts %}
+  {% if post.id == current_post.id %}
+    {% assign index = forloop.index %} 
+  {% endif %}
+{% endfor %}
+
+{% assign min = index | minus: 2 %}
+{% assign max = index | plus: 2 %}
+
+{% for post in posts %}
+  {% if forloop.index >= min and forloop.index <= max %}
+    {% if post.id == current_post.id %}
+      <li class="active"><a href="#">{{ post.title }}</a></li>
+    {% else %}
+      <li><a href="{{ post.url }}">{{ post.title }}</a></li>
+    {% endif %}
+  {% endif %}
+{% endfor %}
+
+<li class="heading">{{ site.data.i18n[current_post.locale].archive }}</li>
+<li>
+  <a href="{{ site.baseurl }}/{{ page.locale }}/">
+    {{ site.data.i18n[current_post.locale].menu.recent_posts }}
+  </a>
+</li>
+<li>
+  <a href="{{ site.baseurl }}/{{ page.locale }}/all.html">
+    {{ site.data.i18n[current_post.locale].menu.all_posts }}
+  </a>
+</li>
+</ul>
