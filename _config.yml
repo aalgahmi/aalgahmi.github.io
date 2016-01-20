@@ -1,3 +1,7 @@
+gems:
+  - jekyll-assets
+  - jekyll-paginate
+
 markdown: kramdown
 highlighter: pygments
 
@@ -8,3 +12,11 @@ highlighter: pygments
 #     output: true
 #   tutorials:
 #     output: true
+
+# Assets
+assets:
+  sources:
+    - _assets
+    - _assets/javascripts
+    - _assets/stylesheets
+    - _assets/fonts
